@@ -1,0 +1,202 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 20px;
+}
+
+/* principal*/
+    #mainContent{
+        width: 85w;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+ 
+/*header*/
+    .header{
+        background: #3573d6;
+        color: white;
+        height: 80px;
+        margin-bottom: 10px;
+        }
+    .logo{
+            text-transform: uppercase;
+        }
+        .linklogo{
+            color: white;
+            text-decoration: none;
+        }
+/* nav*/
+    .navbar{
+        background: rgb(13,6,117);
+        color: white;
+            /*selectores animados
+        padre descendiente{ propiedadesque solo modifican
+            al hijo}
+
+            abuelo>padre>hijo{} */
+    }
+/*contenido*/
+
+/* menu de navegacion*/
+    
+    .navbar ul{
+        list-style-type:none;
+        text-align: right;
+        /* padding: 0; ya esta eliminado por el universal (*) */
+    }
+    .navbar ul li{
+        display: inline-block;
+         /*float para menu desplegable*/
+        /*util solo para menus sin desplegable*/
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        color:green
+        
+    }
+    /*pseudo clases*/
+         .navbar ul li a:hover{
+             background: white;
+             color: rgb(13,6,117)
+         }
+
+    .limpiafloat{clear: both;}
+
+             /*modelo de caja
+             el ancho real del elemento= width+padding+border */
+    #portada{
+        width: 78%;
+        background: rgb(100, 98, 114);
+        padding: 1.6em;
+        float: left;                                   
+        box-sizing: border-box;
+    }
+        /*agrupamiento de selectores*/
+    
+    .destacado,.default{
+        background: white;
+        padding: 0.7em;}
+    .destacado{
+        margin-bottom: 0.6em;
+    }
+
+    #portada .default{
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        height: 340px;
+        overflow: hidden;
+    }
+
+    #portada .imgNota img{
+        /*el ancho se aplica a <img>*/
+        width: 80%;
+    }
+
+    /*Noticias*/
+
+    .breadcrumb{
+        padding: 0.8em;
+        background: rgb(255, 255, 255, 0.5);
+        color: white;
+    }
+          .breadcrumb a{ color: white;
+                         text-decoration: none;
+        }
+    .notasola{
+            background: white;
+            padding: 1em;
+    }
+    .notasola .titulo{
+            padding: 0.5em;
+            }
+            .notasola .titulo h2{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 2em;
+            }
+            .notasola .titulo h3{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.5em;
+            }
+    .notasola .texto p{
+                     padding: 1em 0;
+                     margin-bottom: 2em;
+    }
+    .notasola figure img{
+                     width: 100%;
+    }
+
+    .banner-nota{
+        border: solid gray;
+    } 
+    .banner-nota a img{
+       width: 100%;
+    }
+
+    /*Formulario de contacto*/
+
+    #formContacto{
+        padding: 1.2em;
+        background: rgb(255, 255, 255, 0.5);
+        border-radius: 10px;
+        margin-bottom: 2em;
+        margin-top: 2em;        
+    }
+    #formContacto input, #formContacto select, #formContacto textarea{
+           width: 100%;
+           padding: 0.8em;
+           box-sizing: border-box;
+           margin-bottom: 1em;
+           border: none;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 1em;
+           }
+           /*.check{
+               width: 5% !important;} /*mala practica*/
+              /* .btn-envio{ width: 50% !important;}*/
+            #formContacto input[type="checkbox"]{
+                width: auto;
+            }
+            #formContacto input[type="submit"]{
+                width: 50%;
+            }
+            #formContacto input[type="submit"]:hover{
+                background: rgb(76, 169, 206);
+                color: white;
+            }
+            #formContacto input:focus{
+                background: gray;
+            }
+            #formContacto input:valid{
+                background: green;
+            }
+            #formContacto input:invalid{
+                border: 1px red;}
+    .sidebar-der{
+        width: 20%;
+        background: gray;
+        padding: 20px;
+        height: 100%;
+        float: right;
+        box-sizing: border-box;
+    }
+    .footer{
+        clear: both;
+        background: rgb(76, 169, 206);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.8em;
+    
+    }  
+    
+    
+            
+
